@@ -219,7 +219,7 @@ const NodeConfigPanel: React.FC<NodeConfigPanelProps> = ({ node, onNodeUpdate })
   const renderBasicConfig = () => (
     <Panel header="Basic Configuration" key="basic">
       <Form.Item name="id" label="ID" rules={[{ required: true }]}>
-        <Input disabled />
+        <Input />
       </Form.Item>
       
       <Form.Item name="type" label="Type" rules={[{ required: true }]}>
