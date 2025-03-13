@@ -1,0 +1,71 @@
+@import 'antd/dist/reset.css';
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* React Flow Custom Styles */
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background-color: #555;
+}
+
+.react-flow__handle-top {
+  top: -4px;
+}
+
+.react-flow__handle-bottom {
+  bottom: -4px;
+}
+
+/* Ant Design Overrides */
+.ant-collapse-content-box {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+/* TextArea Expansion */
+.ant-form-item-control-input-content textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Prompt TextArea */
+.ant-form-item[data-field-id*="prompt"] .ant-form-item-control-input-content textarea {
+  min-height: 120px;
+}
+
+/* Drawer Styles */
+.ant-drawer-body {
+  padding: 0;
+}
+
+/* Card Styles */
+.ant-card-small > .ant-card-body {
+  padding: 12px;
+}
